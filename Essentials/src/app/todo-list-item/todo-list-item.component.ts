@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   standalone: true,
   selector: 'todo-list-item',
-  template: ` <li>(TODO) Read Angular Essentials Guide</li> `,
+  templateUrl: './todo-list-item.component.html',
   styles: `
     li {
         color: red;
