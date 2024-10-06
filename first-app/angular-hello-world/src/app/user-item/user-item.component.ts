@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'user-item',
   standalone: true,
-  imports: [],
   templateUrl: './user-item.component.html',
   styleUrl: './user-item.component.css',
 })
 export class UserItemComponent {
-  name: string;
-  constructor() {
-    this.name = 'Felipe';
-  }
+  @Input() name!: string;
+  constructor() {}
 }
