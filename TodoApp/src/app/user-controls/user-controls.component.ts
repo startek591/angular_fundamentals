@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   template: `
     @if (isAdmin) {
     <button>Erase database</button>
+    } @else {
+    <p>You are not authorized.</p>
     }
   `,
 })
