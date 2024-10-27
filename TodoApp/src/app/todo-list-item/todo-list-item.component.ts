@@ -14,4 +14,12 @@ import { Component } from '@angular/core';
 export class TodoListItem {
   taskTitle = '';
   isComplete = false;
+
+  completeTask() {
+    this.isComplete = true;
+  }
+
+  updateTitle(newTitle: string) {
+    this.taskTitle = newTitle;
+  }
 }
