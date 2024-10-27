@@ -11,4 +11,7 @@ import { Component } from '@angular/core';
     }
   `,
 })
-export class TodoListItem {}
+export class TodoListItem {
+  taskTitle = '';
+  isComplete = false;
+}
