@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 import { Article } from './article/article.model';
+import { ArticleComponent } from './article/article.component';
 
 @Component({
   selector: 'app-root',
+  imports: [NgFor, ArticleComponent],
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
