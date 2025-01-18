@@ -4,6 +4,7 @@ import { IntroComponent } from './intro/intro.component';
 import { NgForExampleComponent } from './ng-for-example/ng-for-example.component';
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
 import { NgStyleExampleComponent } from './ng-style-example/ng-style-example.component';
+import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
 
 export const routes: Routes = [
   {
@@ -30,4 +31,10 @@ export const routes: Routes = [
     path: 'ng_style',
     component: NgStyleExampleComponent,
   } as ExampleDef,
+  {
+    label: 'NgClass',
+    name: 'NgClass',
+    path: 'ng_class',
+    component: NgClassExampleComponent,
+  },
 ];
