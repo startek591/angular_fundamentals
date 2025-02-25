@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { UserItemComponent } from '../user-item/user-item.component';
 
 @Component({
   selector: 'app-user-list',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, UserItemComponent],
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.css'],
 })
